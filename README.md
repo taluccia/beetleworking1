@@ -118,15 +118,19 @@ We would like to thank Dr. Bo Zhao for comments, assistance, and editorial advic
 
 [4] Key, C. H., and N. C. Benson. 2006. Landscape assessment (LA): Samplingand analysis methods. USDA Forest Service General Technical ReportRMS-GTR-164-CD:1–55.
 
-[5] Meigs, G. W., R. E. Kennedy, and W. B. Cohen. 2011. A Landsat time seriesapproach to characterize bark beetle and defoliator impacts on tree mortalityand surface fuels in conifer forests. Remote Sensing of Environment115:3707–3718.
+[5] Kurz, W. a, Dymond, C. C., Stinson, G., Rampley, G. J., Neilson, E. T., Carroll, a L., … Safranyik, L. (2008). Mountain pine beetle and forest carbon feedback to climate change. Nature, 452(April), 987–990. <https://doi.org/10.1038/nature06777>
 
-[6] Pickell, P. D., T. Hermosilla, R. J. Frazier, N. C. Coops, and M. A.Wulder. 2016. Forest recovery trends derived from Landsat time series for NorthAmerican boreal forests. International Journal of Remote Sensing 37:138–149.
+[6] Meigs, G. W., R. E. Kennedy, and W. B. Cohen. 2011. A Landsat time seriesapproach to characterize bark beetle and defoliator impacts on tree mortalityand surface fuels in conifer forests. Remote Sensing of Environment115:3707–3718.
 
-[7] Roy, D. P., V. Kovalskyy, H. K. Zhang, E. F. Vermote, L. Yan, S. S. Kumar,and A. Egorov. 2016. Characterization of Landsat-7 to Landsat-8 reflectivewavelength and normalized difference vegetation index continuity. RemoteSensing of Environment 185:57–70.
+[7] Pickell, P. D., T. Hermosilla, R. J. Frazier, N. C. Coops, and M. A.Wulder. 2016. Forest recovery trends derived from Landsat time series for NorthAmerican boreal forests. International Journal of Remote Sensing 37:138–149.
 
-[8] White, J. C., M. A. Wulder, T. Hermosilla, N. C. Coops, and G. W. Hobart.2017. A nationwide annual characterization of 25 years of forestdisturbance and recovery for Canada using Landsat time series. Remote Sensingof Environment 194:303–321.
+[8] Roy, D. P., V. Kovalskyy, H. K. Zhang, E. F. Vermote, L. Yan, S. S. Kumar,and A. Egorov. 2016. Characterization of Landsat-7 to Landsat-8 reflectivewavelength and normalized difference vegetation index continuity. RemoteSensing of Environment 185:57–70.
 
-[9] Wulder, M. a., C. C. Dymond, J. C. White, D. G. Leckie, and A. L. Carroll.2006. Surveying mountain pine beetle damage of forests: A review of remotesensing opportunities. Forest Ecology and Management 221:27–41.
+[9] White, J. C., M. A. Wulder, T. Hermosilla, N. C. Coops, and G. W. Hobart.2017. A nationwide annual characterization of 25 years of forestdisturbance and recovery for Canada using Landsat time series. Remote Sensingof Environment 194:303–321.
+
+[10] Wulder, M. a., C. C. Dymond, J. C. White, D. G. Leckie, and A. L. Carroll.2006. Surveying mountain pine beetle damage of forests: A review of remotesensing opportunities. Forest Ecology and Management 221:27–41.
+
+[11] Wulder, M. A., White, J. C., Grills, D., Nelson, T., & Coops, N. C. (2009). Aerial overview survey of the mountain pine beetle epidemic in British Columbia: Communication of impacts. BC Journal of Ecosystems and Management, 10(1), 45–58.
 
 
 

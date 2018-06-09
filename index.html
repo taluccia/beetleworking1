@@ -71,16 +71,19 @@
 <body>
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark storymap-navbar">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
         <img src="img/firebeetle.ico" width="100%" class="inline-block">
         <!--convert the style value to a class and then add the class to the css file.-->
         <!--<img src="img/logo.png" class="d-inline-block align-top">-->
-        Dead Forests Burning
+        <b>Dead Forests Burning</b>
     </a>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
         <!--Create class ml-auto for the navbar items you want on the right.-->
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" "="" href="javascript:window.scrollBy(0, $('section[data-scene=\'info\']').offset().top - $(window).scrollTop() - $('.storymap-navbar').height() - 30);">Info</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" "="" href="javascript:window.scrollBy(0, $('section[data-scene=\'scene0\']').offset().top - $(window).scrollTop() - $('.storymap-navbar').height() - 30);">Overview</a>
             </li>
@@ -97,15 +100,14 @@
                 <a class="nav-link" "="" href="javascript:window.scrollBy(0, $('section[data-scene=\'scene4\']').offset().top - $(window).scrollTop() - $('.storymap-navbar').height() - 30);">Recovery</a>
             </li>
             <li class="nav-link" >
-                <!--<a class="fa fa-info-circle social"  href="about.html" target="_blank"></a>-->
-                <!--<a class="fa fa-info-circle social" data-toggle="modal" data-target="#info-modal" href="about.html"></a>-->
-                <a href="about.html" target="_blank"><b>About</b></a>
+
+                <a style = "color: gray" href="about.html" target="_blank"><b>About</b></a>
             </li>
             <li class="nav-link">
-                <a class="fab fa-facebook-square" href="https://facebook.com/sharer.php?u=https://taluccia.github.io/" target="_blank"></a>
+                <a class="fab fa-facebook-square" style = "color: gray" href="https://facebook.com/sharer.php?u=https://taluccia.github.io/" target="_blank"></a>
             </li>
             <li class="nav-link">
-                <a class="fab fa-github" href="https://taluccia.github.io/" style="top:40px" target="_blank" ></a>
+                <a class="fab fa-github" style = "color: gray" href="https://taluccia.github.io/" style="top:40px" target="_blank" ></a>
             </li>
         </ul>
     </div>
@@ -129,29 +131,21 @@
                 </div>
             </section>
 
-            <section data-scene="scene0">
+            <section data-scene="info" data-background="img/aerialphoto1.png">
                 <div class="fullscreen text-center scene-title">
                     <br/>
-
-                    <p>Forest in the central interior of British Columbia, Canada are accustom to beetle outbreaks and wildfire.
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p style="color:white; font-size: 30px; margin-left: 5%; margin-right: 5%">Forest in the central interior of British Columbia, Canada are accustom to beetle outbreaks and wildfire.
                     However, the most recent outbreak produced unprecedented mortality, and created a forest legacy that will be present for decades to come.</p>
-                    <p>The last major wildfires in the region occurred between 1880 and 1920, which has allowed Lodgepole pine to mature over the last century.
-                        The combination of abundant mature lodgepole pine and warmer winters associated with anthropogenic climate change have resulted in 50-100%
-                        lodgepole pine mortality in Tweedsmuir and Entiako Provincial Parks, and over 18 million hectares of forest with tree mortality.
-                         </p>
-                    <p>These forest have both economic and intrinsic value. Timber industry has experienced a loss of
-                        over 50% <strong>merchantable timber</strong> since the onset of the beetle outbreak. <strong>Recreation</strong> has declined for local outfitters.
-                        These forest once served as <strong>carbon sink</strong>, sequestering carbon from the atmosphere, and now these forests are a net <strong>carbon source</strong>
-                        release an estimated <a href="https://www.nature.com/articles/nature06777">270 megatonnes</a> of carbon between 2000-2020.
-                        The alterations of in forest structure, in particular fuel structure, composition, and type, have raised <strong>management concerns</strong>
-                        about the potential severe fire behavior, increased fire severity, and overall forest resiliency.
-                       <strong>Because of the extend of the outbreak it is not a question of if these forest will burn but when.</strong> </p>
-                    <p>This overview of outbreak severity, wildfire severity, and forest recovery is centered on three fires
-                        that burned in Tweedsmuir and Entiako provincial parks.
-                        Although the outbreak is widespread, due to the active and pervasive forest harvest tenures in
-                        central interior, this region and these fires provided a rare opportunity to study beetle-fire
-                        interactions without the interference of salvage logging and forest management. </p>
-
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <br/>
                     <br/>
                     <div class="container">
@@ -160,37 +154,83 @@
                            <span class="fa-stack fa-4x">
                               <i class="fas fa-map-marker fa-stack-2x text-primary"></i>
                            </span>
-                                <h4>
+                                <h4 style="color:white">
                                     Location
                                 </h4>
-                                <p class="description">Tweedmuir & Entiako <br/> Provincial Parks</p>
+                                <p class="description" style="color:white">British Columbia</p>
                             </div>
                             <div class="col-md-3 col-sm-3">
                            <span class="fa-stack fa-4x">
                               <i class="fa fa-bug fa-stack-2x text-primary"></i>
                            </span>
-                                <h4>
+                                <h4 style="color:white">
                                     Outbreak
                                 </h4>
-                                <p class="description">18 million hectares</p>
+                                <p class="description" style="color:white">18 million hectares</p>
                             </div>
                             <div class="col-md-3 col-sm-3">
                            <span class="fa-stack fa-4x">
                            <i class="fa fa-fire fa-stack-2x text-primary"></i>
                            </span>
-                                <h4>
+                                <h4 style="color:white">
                                     Wildfire
                                 </h4>
-                                <p class="description">140,000 hectares</p>
+                                <p class="description" style="color:white">140,000 hectares</p>
                             </div>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p style="color:white; font-size: 25px; margin-left: 5%; margin-right: 5%">These forest have both economic and intrinsic value. Timber industry has experienced a loss of
+                        over 50% <strong>merchantable timber</strong> since the onset of the beetle outbreak. <strong>Recreation</strong> has declined for local outfitters.
+                        These forest once served as <strong>carbon sink</strong>, sequestering carbon from the atmosphere, and now these forests are a net <strong>carbon source</strong>
+                        release an estimated 270 megatonnes of carbon between 2000-2020 (Kurz et al. 2008).
+                        The alterations of in forest structure, in particular fuel structure, composition, and type, have raised <strong>management concerns</strong>
+                        about the potential severe fire behavior, increased fire severity, and overall forest resiliency.
+                        <strong>Because of the extend of the outbreak it is not a question of if these forest will burn but when.</strong> </p>
                 </div>
+            </section>
+
+            <section data-scene="scene0">
+                <div>
+                <h2>Overview</h2>
+                <p>This overview of outbreak severity, wildfire severity, and forest recovery is centered on three fires
+                    that burned in Tweedsmuir and Entiako provincial parks.
+                    Although the outbreak is widespread, due to the active and pervasive forest harvest tenures in
+                    central interior, this region and these fires provided a rare opportunity to study beetle-fire
+                    interactions without the interference of salvage logging and forest management.</p>
+                <p>The last major wildfires in the region occurred between 1880 and 1920, which has allowed Lodgepole pine to mature over the last century.
+                    The combination of abundant mature lodgepole pine and warmer winters associated with anthropogenic climate change have resulted in 50-100%
+                    lodgepole pine mortality in Tweedsmuir and Entiako Provincial Parks, and over 18 million hectares of forest with tree mortality.</p>
+                <br>
+                <hr>
+                <!--<div id="map" class="map"></div>-->
+                <!--info panel-->
+                <div class="info-panel">
+                    <!-- legend patch items -->
+                    <table style="width:100%">
+                        <tr>
+                            <td> <i style="background: red;"></i><p>Beetle Outbreak</p></td>
+                            <td> <i style="background: green;"></i><p>Provincial Parks</p></td>
+                            <td> <i style="background: orange;"></i><p>Wildfire</p></td>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+                </div>
+
             </section>
 
 
             <section data-scene="scene1">
-                <h2>Lodgepole Pine</h2>
+                <h2>Lodgepole Pine Forests</h2>
                 <p>Sub-boreal forests cover vast areas in central interior British Columbia. Forests provide vital services across the region.
                     The forests provide economic value in terms of <strong>timber harvest</strong>. They provide ecosystems services such as <strong>carbon sequestration</strong> and watershed management.
                     Forests provide critical <strong>wildlife habitat</strong>.  </p>
@@ -200,7 +240,7 @@
                     wildfire return is typically 100-150 year intervals. Wildfire results in tree mortality and forest initiation.
                     It diversifies the landscape by initiating <strong>early successional habitat</strong>.</p>
                 <p> Mountain pine beetle are <strong>endemic</strong> to North American forest often killing older, weaker trees, which create canopy gaps.
-                    Outbreak conditions are associated with <strong>explosions in beetle population</strong> that result in large tree mortality events. </p>
+                    Outbreak conditions are associated with <strong>eruptions in beetle population</strong> that result in large tree mortality events. </p>
                 <br>
                 <hr>
                 <!--<div id="map" class="map"></div>-->
@@ -225,7 +265,7 @@
             </section>
 
             <section data-scene="scene2">
-                <h2>Beetle Outbreak</h2>
+                <h2>Beetle Outbreak Severity</h2>
                 <p>Mountain pine beetles are a natural part of forest ecosystems in western North America. Lodgepole
                     pine trees are the <strong>primary host</strong> for mountain pine beetles. Warmer winters and and abundance of
                     mature lodgepole pine trees have created ideal conditions for the eruption in beetle populations
@@ -253,7 +293,7 @@
 
 
             <section data-scene="scene3">
-                <h2>Wildfire</h2>
+                <h2>Wildfire Severity</h2>
                 <p>Wildfires is often associated with initiating new growth for lodgepole pine forests. These ecosystems are often reliant on
                     wildfire to release seeds from <strong>fire cue serotinous cones</strong> that are held in tree canopies.
                     Without wildfire, cones retain seeds and new growth is limited.</p>
@@ -287,7 +327,7 @@
             <section data-scene="scene4">
                 <h2>Early Succession</h2>
                 <p>Forest <strong>resiliency</strong> has been a concern for land managers when dead forest from beetle outbreak burn during wildfire.
-                    Although some areas have low seedling recruitment, generally wildfire is a <strong>good mechanism</strong> to release
+                    Although some areas have low seedling recruitment, generally <strong>wildfire</strong> is a <strong>good mechanism</strong> to release
                     seeds and allow the forest to regenerate.</p>
                 <p>Field work has show some influence of outbreak conditions on seedling recruitment. Here we are using
                     Landsat imagery to characterize forest recovery after sequential disturbances of beetle outbreak and wildfire. </p>
@@ -432,7 +472,8 @@
 
     var scenes = {
         overview: {lat: 53.248971, lng: -125.644940, zoom: 7, name: 'Cover Page', layers: []},
-        scene0: {lat: 53.29826, lng: -125.69520, zoom: 7, name: 'Overview', layers: [layers.mpb, layers.parks, layers.fire]},
+        info: {lat: 53.248971, lng: -125.644940, zoom: 7, name: 'Overview', layers: []},
+        scene0: {lat: 53.29826, lng: -125.69520, zoom: 6, name: 'Overview', layers: [layers.mpb, layers.parks, layers.fire]},
         scene1: {lat: 53.29826, lng: -125.69520, zoom: 10, name: 'Lodgepole Pine Forests', layers: [layers.vri]},
         scene2: {lat: 53.269461, lng: -125.863468, zoom: 10, name: 'Beetle Outbreak', layers: [layers.beetle, layers.photo1]},
         scene3: {lat: 53.271870, lng: -125.782894, zoom: 10, name: 'Wildfire', layers: [layers.ESRI, layers.burn, layers.photo2]},
