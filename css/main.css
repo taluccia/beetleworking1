@@ -62,7 +62,16 @@
 
  }
 
-
+.intro{
+    font-size:25px;
+    line-height: 45px;
+    color: whitesmoke;
+    text-shadow: 0 0 5px black;
+    margin-left: 5%;
+    position:absolute;
+    top: 5%;
+    right: 30%
+}
 
 
 .embeded-photo img {
@@ -81,6 +90,8 @@
     font-size: 15px;
     font-weight: bold;
 }
+
+
 
 
 .credit {
@@ -103,6 +114,17 @@
 .description{
     font-size: 17px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.intro{
+    font-size:35px;
+    line-height: 45px;
+    color: black;
+    text-shadow: 0 0 5px black;
+    margin-left: 5%;
+    position:absolute;
+    top: 20%;
+    right: 30%
 }
 
 .end{
