@@ -65,6 +65,8 @@
     <!--<script src="js/globeminimap.js"></script>-->
     <script src="js/data.js"></script>
 
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
 </head>
 <body>
 
@@ -120,8 +122,10 @@
                 <div class="fullscreen text-center">
 
                     <h1>Dead Forests Burning</h1>
-                    <br>
-                    <p style="color:white; font-size: 20px"> The Dakota Access Pipeline Protest (#NoDAPL) began in early 2016 in reaction to the approved construction of Energy Transfer Partners' Dakota Access Pipeline near the Standing Rock Indian Reservation.  Local native American and environmentalists were gathered at both Standing Rock and #StandingRock on Facebook to express their deep concerns.</p>
+                    <br/>
+                    <br/>
+                    <h6 style="color:white; font-size: 20px"> The most recent Mountain Pine Beetle Outbreak has affect over 18 million hectares of forests in British Columbia. <br/>
+                        This epidemic has raised concerns for land managers regarding potential for extreme wildfire behavior, wildfire severity, and forest resiliency.</h6>
                 </div>
             </section>
 
@@ -130,10 +134,23 @@
                     <br/>
 
                     <p>Forest in the central interior of British Columbia, Canada are accustom to beetle outbreaks and wildfire.
-                    However, the most recent outbreak produced unprecented mortality, and crerated a forest legacy that will be present for decades to come.</p>
-                    <p>WIth over 18 million hectares of mature lodgepole pin forest affected by the outbreak and over 50% loss in merchantable timber.</p>
-                    <p>The alterations of in forest structure from the beetle outbreak have raised concerns for landmanagers and the public
-                        regarding potential for more severe fires when these dead forest burn. Because of the extend of the outbreak it is not a question of if these forest will burn but when.</p>
+                    However, the most recent outbreak produced unprecedented mortality, and created a forest legacy that will be present for decades to come.</p>
+                    <p>The last major wildfires in the region occurred between 1880 and 1920, which has allowed Lodgepole pine to mature over the last century.
+                        The combination of abundant mature lodgepole pine and warmer winters associated with anthropogenic climate change have resulted in 50-100%
+                        lodgepole pine mortality in Tweedsmuir and Entiako Provincial Parks, and over 18 million hectares of forest with tree mortality.
+                         </p>
+                    <p>These forest have both economic and intrinsic value. Timber industry has experienced a loss of
+                        over 50% <strong>merchantable timber</strong> since the onset of the beetle outbreak. <strong>Recreation</strong> has declined for local outfitters.
+                        These forest once served as <strong>carbon sink</strong>, sequestering carbon from the atmosphere, and now these forests are a net <strong>carbon source</strong>
+                        release an estimated <a href="https://www.nature.com/articles/nature06777">270 megatonnes</a> of carbon between 2000-2020.
+                        The alterations of in forest structure, in particular fuel structure, composition, and type, have raised <strong>management concerns</strong>
+                        about the potential severe fire behavior, increased fire severity, and overall forest resiliency.
+                       <strong>Because of the extend of the outbreak it is not a question of if these forest will burn but when.</strong> </p>
+                    <p>This overview of outbreak severity, wildfire severity, and forest recovery is centered on three fires
+                        that burned in Tweedsmuir and Entiako provincial parks.
+                        Although the outbreak is widespread, due to the active and pervasive forest harvest tenures in
+                        central interior, this region and these fires provided a rare opportunity to study beetle-fire
+                        interactions without the interference of salvage logging and forest management. </p>
 
                     <br/>
                     <br/>
@@ -173,14 +190,17 @@
 
 
             <section data-scene="scene1">
-                <h2>Forests</h2>
+                <h2>Lodgepole Pine</h2>
                 <p>Sub-boreal forests cover vast areas in central interior British Columbia. Forests provide vital services across the region.
                     The forests provide economic value in terms of <strong>timber harvest</strong>. They provide ecosystems services such as <strong>carbon sequestration</strong> and watershed management.
-                    Forests provide critical <strong>wildlife habitat</strong> for grizzly bears, caribou, wolverines and various bird species.  </p>
+                    Forests provide critical <strong>wildlife habitat</strong>.  </p>
 
-                <p>Lodgepole pine are dominant species in the forests of the central interior. Historically, forest life cycles are influenced by disturbance regimes of <strong>wildfire</strong> and <strong>beetle outbreaks</strong>.
+                <p>Lodgepole pine are dominant species in the forests of the central interior. Historically, forest life
+                    cycles are influenced by disturbance regimes of <strong>wildfire</strong> and <strong>beetle outbreaks</strong>.
                     wildfire return is typically 100-150 year intervals. Wildfire results in tree mortality and forest initiation.
-                    It diversifies the landscape by<span style="color:#ff525c"> creating early</span> successional habitat. Beetle outbreaks kill off mature canopy trees and release understory species.  </p>
+                    It diversifies the landscape by initiating <strong>early successional habitat</strong>.</p>
+                <p> Mountain pine beetle are <strong>endemic</strong> to North American forest often killing older, weaker trees, which create canopy gaps.
+                    Outbreak conditions are associated with <strong>explosions in beetle population</strong> that result in large tree mortality events. </p>
                 <br>
                 <hr>
                 <!--<div id="map" class="map"></div>-->
@@ -207,10 +227,13 @@
             <section data-scene="scene2">
                 <h2>Beetle Outbreak</h2>
                 <p>Mountain pine beetles are a natural part of forest ecosystems in western North America. Lodgepole
-                    pine trees are the primary host for mountain pine beetles. Warmer winters and and abundance of
+                    pine trees are the <strong>primary host</strong> for mountain pine beetles. Warmer winters and and abundance of
                     mature lodgepole pine trees have created ideal conditions for the eruption in beetle populations
-                    that have resulted in millions of hectares of tree mortality. Much of the tree mortality has been
-                    concentrated in central interior British Columbia.  </p>
+                    that have resulted in millions of hectares of tree mortality.</p>
+                <p> The <strong>epicenter</strong> of the beetle outbreak occurred in the central interior of British Columbia.
+                    Beetles have killed 50-100% of mature lodgepole pine. Forest regeneration is slow in the wake of the
+                    beetle outbreak, because pines continue to hold seeds in sealed <strong>serotinous cones</strong> awaiting the heat from wildfire.
+                    </p>
                 <hr>
                 <!--<div id="map" class="map"></div>-->
                 <!--info panel-->
@@ -222,6 +245,8 @@
                             <td> <i style="background: #f55629;"></i><p>High Mortality</p></td>
                         </tr>
                     </table>
+                    <hr>
+                    <div class="embeded-photo img-responsive img-thumbnail"></div>
                 </div>
             </section>
 
@@ -229,11 +254,13 @@
 
             <section data-scene="scene3">
                 <h2>Wildfire</h2>
-                <p>Wildfires initiate new growth for lodgepole pine forests. These ecosystems are often reliant on
-                    wildfire to release fire cue seeds from cones in the canopy of lodgepole pine. Without wildfire, no growth is limited.</p>
-                <p> These landscape tend to be characterized by stand replacing fire, but even when much of the forest
-                    large patches of moderate to high severity fire still occur. This burn severity map shows the post-fire
-                    mosaic for three wildfire events. </p>
+                <p>Wildfires is often associated with initiating new growth for lodgepole pine forests. These ecosystems are often reliant on
+                    wildfire to release seeds from <strong>fire cue serotinous cones</strong> that are held in tree canopies.
+                    Without wildfire, cones retain seeds and new growth is limited.</p>
+                <p> These landscape tend to be characterized by stand replacing fire when forest are alive at time of fire.
+                    When dead forests burn much of the landscape is still characterized by moderate to high severity fire,
+                    based on this burn severity map generated from Landsat imagery.</p>
+                <p>The post fire <strong>burn mosaic</strong> with diversify the composition and structure of the landscape</p>
                 <hr>
                 <!--<div id="map" class="map"></div>-->
                 <!--info panel-->
@@ -248,7 +275,7 @@
                             <td> <i style="background: #D7191C;"></i><p>Severe Crown Fire</p></td>
                         </tr>
                     </table>
-                    <span>Source:</span>                <a href="https://www.fs.fed.us/postfirevegcondition/documents/publications/FIREMON_LandscapeAssessment.pdf">Burn Severity</a>
+                    <span>Source:</span><a href="https://www.fs.fed.us/postfirevegcondition/documents/publications/FIREMON_LandscapeAssessment.pdf">Burn Severity</a>
                     <hr>
                     <div class="embeded-photo img-responsive img-thumbnail"></div>
 
@@ -259,11 +286,16 @@
 
             <section data-scene="scene4">
                 <h2>Early Succession</h2>
-                <p>Regeneration is critical to forest recovery, and the rate of tree regeneration is variable across the landscape. Post-fire
-                    early successional growth increases habitat and species biodiversity. The influx of herbaceous plants - fireweed
-                    and Geranium bicknellii attract humming birds, while increased insect activity attracts black backed
-                    woodpeckers. Lodgepole pine needs fire to release seeds. Wildfire breaths new life into the landscape
-                    after extensive mortality from beetle outbreak  </p>
+                <p>Forest <strong>resiliency</strong> has been a concern for land managers when dead forest from beetle outbreak burn during wildfire.
+                    Although some areas have low seedling recruitment, generally wildfire is a <strong>good mechanism</strong> to release
+                    seeds and allow the forest to regenerate.</p>
+                <p>Field work has show some influence of outbreak conditions on seedling recruitment. Here we are using
+                    Landsat imagery to characterize forest recovery after sequential disturbances of beetle outbreak and wildfire. </p>
+                <p> Wildfire initiates a variety of plant growth either by cuing seedbanks and/or freeing up available resources.
+                    The beauty of the post fire landscape presents itself in both plant life and wildlife. The influx of
+                    herbaceous plants such as <strong>fireweed</strong> and <strong>Geranium bicknellii</strong> attract <strong>humming birds</strong>, while increased insect
+                    and charred trees provide both food and shelter for <strong>black backed woodpeckers</strong>.</p>
+
                 <hr>
                 <!--<div id="map" class="map"></div>-->
                 <!--info panel-->
@@ -287,14 +319,18 @@
 
 
 
-            <section data-scene="end" data-background="img/end1.png">
+            <section data-scene="end" data-background="img/fire_tetachuck.jpg">
                 <div class="fullscreen text-center">
                     <div class= "end-background-img background-fullscreen-setting text-responsive">
                         <p class ="end">
-                            Early successional composition and structure increase biodiveristy .</p>
+                            Wildfire breaths new life into forest killed by beetle outbreak. Post wildfire early
+                            succession produces an influx of new plant species that attract and provide food and habitat for a diversity of
+                            species including blacked backed wood peckers, humming birds, and grizzly bears. Lodgepole pine regeneration
+                            may vary across the landscape but is generally resilient because wildfire releases seeds that are held in cones
+                            after trees were killed by beetles.</p>
                         <div class="credit">
                             <!--<p><img style="width:180px;" align="right" src="img/end1.png"></p> <br/><br/><br/>-->
-                            <p>Created by Michael Cook and Anna Talucci From Oregon State University</p>
+                            <p>Created by Michael Cook and Anna Talucci from Oregon State University</p>
                         </div>
                     </div>
                 </div>
