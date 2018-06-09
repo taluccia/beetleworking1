@@ -89,3 +89,11 @@ var photos3 = [{
         url: "img/wildlife.png",
         caption: "Wildlife"
     }];
+
+var photos4 = [{
+    lat: 53.21794,
+    lng: -125.51213,
+    thumbnail: "img/Wildfire_2013_Tetachucklodge14.jpg",
+    url: "img/highrecovery.png",
+    caption: "High Recovery"
+}];

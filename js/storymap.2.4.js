@@ -31,7 +31,7 @@
 
         var defaults = {
             selector: '[data-scene]',
-            triggerpos: '30%',
+            triggerpos: '17%',
             navbar: false,
             navwidget: false,
             legend: true,
@@ -103,8 +103,8 @@
                 // }
 
 
-                if (section.height() <= $(window).height() * 0.33 && section.has("img").length === 0) {
-                    section.height($(window).height() * 0.33)
+                if (section.height() <= $(window).height() * 0.20 && section.has("img").length === 0) {
+                    section.height($(window).height() * 0.20)
                 }
 
             });
@@ -221,7 +221,7 @@
 
 
 
-               //$(".navbar-header").after("<div class='collapse navbar-collapse nav navbar-nav navbar-right storymap-navbar'>");
+                //$(".navbar-header").after("<div class='collapse navbar-collapse nav navbar-nav navbar-right storymap-navbar'>");
 
 
                 $.each(sections, function (key, element) {
@@ -363,6 +363,7 @@
 
 
             sections.on('viewing', function () {
+                $("div.embeded-photo").hide();
 
                 $(this)
                     .removeClass('invisible')
@@ -507,5 +508,4 @@
     }
 
 }(jQuery));
-
 
