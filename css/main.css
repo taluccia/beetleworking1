@@ -138,6 +138,17 @@
     right: 30%
 }
 
+.endcredit{
+    font-size:15px;
+    line-height: 45px;
+    color: whitesmoke;
+    text-shadow: 0 0 5px black;
+    margin-left: 5%;
+    position:absolute;
+    bottom: 10%;
+    right: 10%
+}
+
 .end-background-img {
     background: url("../img/end1.png") no-repeat center center fixed;
     -webkit-background-size: cover;
