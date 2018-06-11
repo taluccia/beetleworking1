@@ -193,7 +193,7 @@
                         which will release an estimated 270 megatonnes of carbon between 2000-2020 (Kurz et al. 2008).
                         The alterations of in forest structure, in particular fuel structure, composition, and type, have raised <strong>management concerns</strong>
                         about the potential severe fire behavior, increased fire severity, and overall forest resiliency.
-                        <strong>Because of the extend of the outbreak it is not a question of if these forest will burn but when.</strong> </p>
+                        <strong>Because of the extent of the outbreak it is not a question of if these forest will burn but when.</strong> </p>
                 </div>
             </section>
 
@@ -225,96 +225,98 @@
                 </div>
                 </div>
 
-                <div class="col-med-2 col-sm-2">
-                    <head>
-                        <style>
-                            .axis .domain {
-                                display: none;
-                            }
-                        </style>
-                    </head>
-                    <body>
-                    <svg width="960" height="600"></svg>
-                    <script src="https://d3js.org/d3.v4.min.js"></script>
+                <div class="leaflet-center leaflet-right">
+                    <div class="col-med-2 col-sm-2">
+                        <head>
+                            <style>
+                                .axis .domain {
+                                    display: none;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                        <svg width="400" height="400"></svg>
+                        <script src="https://d3js.org/d3.v4.min.js"></script>
 
-                    <script>
-                        var svg = d3.select("svg"),
-                            margin = {top: 20, right: 20, bottom: 30, left: 40},
-                            width = +svg.attr("width") - margin.left - margin.right,
-                            height = +svg.attr("height") - margin.top - margin.bottom,
-                            g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-                        var x0 = d3.scaleBand()
-                            .rangeRound([0, width])
-                            .paddingInner(0.1);
-                        var x1 = d3.scaleBand()
-                            .padding(0.05);
-                        var y = d3.scaleLinear()
-                            .rangeRound([height, 0]);
-                        var z = d3.scaleOrdinal()
-                            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-                        d3.csv("assets/areadat.csv", function(d, i, columns) {
-                            for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-                            return d;
-                        }, function(error, data) {
-                            if (error) throw error;
-                            var keys = data.columns.slice(1);
-                            x0.domain(data.map(function(d) { return d.year; }));
-                            x1.domain(keys).rangeRound([0, x0.bandwidth()]);
-                            y.domain([0, d3.max(data, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
-                            g.append("g")
-                                .selectAll("g")
-                                .data(data)
-                                .enter().append("g")
-                                .attr("transform", function(d) { return "translate(" + x0(d.year) + ",0)"; })
-                                .selectAll("rect")
-                                .data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
-                                .enter().append("rect")
-                                .attr("x", function(d) { return x1(d.key); })
-                                .attr("y", function(d) { return y(d.value); })
-                                .attr("width", x1.bandwidth())
-                                .attr("height", function(d) { return height - y(d.value); })
-                                .attr("fill", function(d) { return z(d.key); });
-                            g.append("g")
-                                .attr("class", "axis")
-                                .attr("transform", "translate(0," + height + ")")
-                                .call(d3.axisBottom(x0));
-                            g.append("g")
-                                .attr("class", "axis")
-                                .call(d3.axisLeft(y).ticks(null, "s"))
-                                .append("text")
-                                .attr("x", 2)
-                                .attr("y", y(y.ticks().pop()) + 0.5)
-                                .attr("dy", "0.32em")
-                                .attr("fill", "#000")
-                                .attr("font-weight", "bold")
-                                .attr("text-anchor", "start")
-                                .text("Millions of Hectares");
-                            var legend = g.append("g")
-                                .attr("font-family", "sans-serif")
-                                .attr("font-size", 12)
-                                .attr("text-anchor", "end")
-                                .selectAll("g")
-                                .data(keys.slice().reverse())
-                                .enter().append("g")
-                                .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-                            legend.append("rect")
-                                .attr("x", width - 650)
-                                .attr("y", height - 400)
-                                .attr("width", 19)
-                                .attr("height", 19)
-                                .attr("fill", z);
-                            legend.append("text")
-                                .attr("x", width - 660)
-                                .attr("y", 160)
-                                .attr("dy", "0.32em")
-                                .text(function(d) { return d; });
-                        });
-                    </script>
-
-
-                    </body>
+                        <script>
+                            var svg = d3.select("svg"),
+                                margin = {top: 20, right: 20, bottom: 30, left: 40},
+                                width = +svg.attr("width") - margin.left - margin.right,
+                                height = +svg.attr("height") - margin.top - margin.bottom,
+                                g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                            var x0 = d3.scaleBand()
+                                .rangeRound([0, width])
+                                .paddingInner(0.1);
+                            var x1 = d3.scaleBand()
+                                .padding(0.05);
+                            var y = d3.scaleLinear()
+                                .rangeRound([height, 0]);
+                            var z = d3.scaleOrdinal()
+                                .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+                            d3.csv("assets/areadat.csv", function(d, i, columns) {
+                                for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+                                return d;
+                            }, function(error, data) {
+                                if (error) throw error;
+                                var keys = data.columns.slice(1);
+                                x0.domain(data.map(function(d) { return d.year; }));
+                                x1.domain(keys).rangeRound([0, x0.bandwidth()]);
+                                y.domain([0, d3.max(data, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
+                                g.append("g")
+                                    .selectAll("g")
+                                    .data(data)
+                                    .enter().append("g")
+                                    .attr("transform", function(d) { return "translate(" + x0(d.year) + ",0)"; })
+                                    .selectAll("rect")
+                                    .data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
+                                    .enter().append("rect")
+                                    .attr("x", function(d) { return x1(d.key); })
+                                    .attr("y", function(d) { return y(d.value); })
+                                    .attr("width", x1.bandwidth())
+                                    .attr("height", function(d) { return height - y(d.value); })
+                                    .attr("fill", function(d) { return z(d.key); });
+                                g.append("g")
+                                    .attr("class", "axis")
+                                    .attr("transform", "translate(0," + height + ")")
+                                    .call(d3.axisBottom(x0));
+                                g.append("g")
+                                    .attr("class", "axis")
+                                    .call(d3.axisLeft(y).ticks(null, "s"))
+                                    .append("text")
+                                    .attr("x", 2)
+                                    .attr("y", y(y.ticks().pop()) + 0.5)
+                                    .attr("dy", "0.32em")
+                                    .attr("fill", "#000")
+                                    .attr("font-weight", "bold")
+                                    .attr("text-anchor", "start")
+                                    .text("Millions of Hectares");
+                                var legend = g.append("g")
+                                    .attr("font-family", "sans-serif")
+                                    .attr("font-size", 12)
+                                    .attr("text-anchor", "end")
+                                    .selectAll("g")
+                                    .data(keys.slice().reverse())
+                                    .enter().append("g")
+                                    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+                                legend.append("rect")
+                                    .attr("x", width - 190)
+                                    .attr("y", height - 250)
+                                    .attr("width", 12)
+                                    .attr("height", 12)
+                                    .attr("fill", z);
+                                legend.append("text")
+                                    .attr("x", width - 195)
+                                    .attr("y", 105)
+                                    .attr("dy", "0.32em")
+                                    .text(function(d) { return d; });
+                            });
+                        </script>
 
 
+                        </body>
+
+
+                    </div>
                 </div>
 
             </section>
@@ -564,7 +566,7 @@
     var scenes = {
         overview: {lat: 53.248971, lng: -125.644940, zoom: 7, name: 'Cover Page', layers: []},
         info: {lat: 53.248971, lng: -125.644940, zoom: 7, name: 'Overview', layers: []},
-        scene0: {lat: 53.29826, lng: -125.69520, zoom: 6, name: 'Overview', layers: [layers.mpb, layers.parks, layers.fire]},
+        scene0: {lat: 52.59826, lng: -125.69520, zoom: 7, name: 'Overview', layers: [layers.mpb, layers.parks, layers.fire]},
         scene1: {lat: 53.271870, lng: -125.982894, zoom: 10, name: 'Lodgepole Pine Forests', layers: [layers.vri]},
         scene2: {lat: 53.271870, lng: -125.982894, zoom: 10, name: 'Beetle Outbreak', layers: [layers.beetle, layers.photo1]},
         scene3: {lat: 53.271870, lng: -125.982894, zoom: 10, name: 'Wildfire', layers: [layers.ESRI, layers.burn, layers.photo2]},
